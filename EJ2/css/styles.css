@@ -15,10 +15,10 @@ body {
   background: #f8f9fa;
   text-align: center;
   padding: 20px;
-  border-bottom: 2px solid #1d4ed8;
+  border-bottom: 2px solid #c2410c;
 }
 
-.header h1 { color: #1e3a8a; margin-bottom: 6px; }
+.header h1 { color: #9a3412; margin-bottom: 6px; }
 .subtitle { color: #4b5563; font-size: 14px; }
 
 .card {
@@ -51,7 +51,7 @@ body {
   padding: 10px;
   border: none;
   border-radius: 4px;
-  background: #1d4ed8;
+  background: #c2410c;
   color: #fff;
   font-size: 15px;
   cursor: pointer;
@@ -67,7 +67,7 @@ body {
   text-align: center;
   font-size: 16px;
   font-weight: bold;
-  color: #15803d;
+  color: #c2410c;
 }
 
 .footer {
@@ -76,5 +76,5 @@ body {
 }
 
 .footer a {
-  color: #1d4ed8;
+  color: #c2410c;
 }
