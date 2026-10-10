@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e5e7eb;
+  padding: 16px;
+}
+
+.tema-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.card {
+  width: 100%;
+  max-width: 340px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 20px;
+  background: #ffffff;
+  color: #111827;
+  text-align: center;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.tabs {
+  display: flex;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 8px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #374151;
+}
+
+.tab:not(:last-child) {
+  border-right: 1px solid #d1d5db;
+}
+
+.card h1 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.boton {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 14px;
+  cursor: pointer;
+  background: #25332a;
+  color: #fff;
+}
+
+/* Pestaña seleccionada */
+#tema-claro:checked ~ .card label[for="tema-claro"],
+#tema-oscuro:checked ~ .card label[for="tema-oscuro"],
+#tema-custom:checked ~ .card label[for="tema-custom"] {
+  background: #252c28;
+  color: #fff;
+}
+
+/* Tema oscuro (se aplica al pulsar Actualizar) */
+.card.tema-oscuro {
+  background: #111827;
+  color: #f9fafb;
+  border-color: #1f2937;
+}
+
+.card.tema-oscuro .tabs,
+.card.tema-oscuro .tab:not(:last-child) {
+  border-color: #374151;
+}
+
+.card.tema-oscuro .tab {
+  color: #d1d5db;
+}
+
+.card.tema-oscuro p {
+  color: #9ca3af;
+}
+
+.card.tema-custom {
+  background: linear-gradient( #db2777);
+  color: #f1b3b3;
+  border-color: transparent;
+}
+
+.card.tema-custom .tabs,
+.card.tema-custom .tab:not(:last-child) {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.card.tema-custom .tab {
+  color: #fff;
+}
+
+.card.tema-custom p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.card.tema-custom .boton {
+  background: #fff;
+  color: #7c3aed;
+}
