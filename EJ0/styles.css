@@ -8,10 +8,16 @@ body {
   font-family: Arial, sans-serif;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #e5e7eb;
   padding: 16px;
+}
+
+.footer {
+  margin-top: 16px;
+  text-align: center;
 }
 
 .tema-input {
@@ -30,6 +36,9 @@ body {
   color: #111827;
   text-align: center;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
+  padding-bottom: 15px; 
+  box-sizing: border-box;
+
 }
 
 .tabs {
@@ -123,4 +132,9 @@ body {
 .card.tema-custom .boton {
   background: #fff;
   color: #7c3aed;
+}
+
+.footer {
+  Text-align: center;
+  padding: 16px;
 }
